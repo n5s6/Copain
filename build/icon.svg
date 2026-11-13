@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="55%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+    <linearGradient id="guitarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e0e7ff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded App Icon Background -->
+  <rect x="64" y="64" width="896" height="896" rx="200" ry="200" fill="url(#bgGrad)" />
+  <rect x="68" y="68" width="888" height="888" rx="196" ry="196" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="8" />
+
+  <!-- Stylized Guitar (rotated 45deg, centered) -->
+  <g transform="translate(512, 512) rotate(-45) translate(-512, -512)">
+    <!-- Neck -->
+    <rect x="484" y="168" width="56" height="340" rx="14" fill="url(#guitarGrad)" />
+    <!-- Headstock -->
+    <path d="M466 118 C466 102, 480 92, 512 92 C544 92, 558 102, 558 118 L548 182 C546 190, 538 196, 528 196 L496 196 C486 196, 478 190, 476 182 Z" fill="url(#guitarGrad)" />
+    <!-- Tuning pegs -->
+    <circle cx="456" cy="126" r="12" fill="#c7d2fe" />
+    <circle cx="456" cy="160" r="12" fill="#c7d2fe" />
+    <circle cx="568" cy="126" r="12" fill="#c7d2fe" />
+    <circle cx="568" cy="160" r="12" fill="#c7d2fe" />
+
+    <!-- Guitar Body -->
+    <path d="
+      M 512 432
+      C 442 432, 396 472, 396 534
+      C 396 572, 422 598, 422 624
+      C 422 648, 362 678, 362 758
+      C 362 848, 426 904, 512 904
+      C 598 904, 662 848, 662 758
+      C 662 678, 602 648, 602 624
+      C 602 598, 628 572, 628 534
+      C 628 472, 582 432, 512 432 Z
+    " fill="url(#guitarGrad)" />
+
+    <!-- Soundhole / Pickguard Accent -->
+    <circle cx="512" cy="634" r="54" fill="#4f46e5" />
+    <circle cx="512" cy="634" r="40" fill="#312e81" />
+
+    <!-- Bridge -->
+    <rect x="454" y="756" width="116" height="24" rx="10" fill="#4338ca" />
+
+    <!-- Strings -->
+    <line x1="496" y1="185" x2="496" y2="756" stroke="#818cf8" stroke-width="5" stroke-linecap="round" />
+    <line x1="512" y1="185" x2="512" y2="756" stroke="#818cf8" stroke-width="5" stroke-linecap="round" />
+    <line x1="528" y1="185" x2="528" y2="756" stroke="#818cf8" stroke-width="5" stroke-linecap="round" />
+  </g>
+</svg>
+

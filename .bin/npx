@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "/Users/nmontes/Code/ChatBot/.bin/node" "/opt/homebrew/lib/node_modules/npm/bin/npx-cli.js" "$@"
