@@ -81,6 +81,25 @@ npm run build:win
 npm run build:linux
 ```
 
+### Creating a New Release on GitHub (Automated Multiplatform Packages)
+
+The `.github/workflows/release.yml` workflow automatically builds and publishes installers for **macOS**, **Windows**, and **Linux** to **GitHub Releases**:
+
+1. Update `"version"` in `package.json` (e.g., `1.0.1`) and commit your changes:
+   ```bash
+   git add package.json
+   git commit -m "chore: bump version to 1.0.1"
+   git push origin main
+   ```
+2. Create and push a version tag (`v*`):
+   ```bash
+   git tag v1.0.1
+   git push origin v1.0.1
+   ```
+3. You can also trigger the workflow manually from GitHub (**Actions → Release Copain → Run workflow**).
+
+Once completed, all packaged installers appear under **Releases** on `n5s6/Copain`.
+
 ### Project Structure
 
 ```text
@@ -196,6 +215,25 @@ npm run build:win
 # Linux (.AppImage et .tar.gz x64)
 npm run build:linux
 ```
+
+### Créer une nouvelle Release sur GitHub (Packages multiplateformes automatiques)
+
+Le workflow `.github/workflows/release.yml` compile et publie automatiquement les installeurs **macOS**, **Windows** et **Linux** dans **GitHub Releases** :
+
+1. Mettez à jour `"version"` dans `package.json` (ex. `1.0.1`) et commitez :
+   ```bash
+   git add package.json
+   git commit -m "chore: bump version to 1.0.1"
+   git push origin main
+   ```
+2. Créez et poussez un tag de version (`v*`) :
+   ```bash
+   git tag v1.0.1
+   git push origin v1.0.1
+   ```
+3. Vous pouvez aussi déclencher le build manuellement depuis GitHub (**Actions → Release Copain → Run workflow**).
+
+Une fois le workflow terminé, tous les installeurs sont disponibles dans la section **Releases** de `n5s6/Copain`.
 
 ### Architecture du projet
 
